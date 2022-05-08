@@ -9,7 +9,7 @@ export function FeedbackTypeStep({ onFeedbackTypeStepChanged }: FeedbackTypeStep
   return (
     <>
     <header>
-        <span className="text-xl leading-6">Deixe seu feedback</span>
+        <span className="text-zinc-800 dark:text-zinc-200 text-xl leading-6">Deixe seu feedback</span>
 
         <CloseButton />
     </header>
@@ -19,7 +19,7 @@ export function FeedbackTypeStep({ onFeedbackTypeStepChanged }: FeedbackTypeStep
         return (
           <button 
           key={key}
-          className="bg-zinc-800 text-zinc-100 rounded-lg py-5 w-24 flex-1 flex flex-col items-center gap-1 border-2 border-transparent hover:border-brand-500 focus:border-brand-500 focus:outline-none"
+          className="bg-zinc-100 dark:bg-zinc-800 dark:text-zinc-100 rounded-lg py-5 w-24 flex-1 flex flex-col items-center gap-1 border-2 border-transparent hover:border-brand-500 focus:border-brand-500 focus:outline-none"
           onClick={() => onFeedbackTypeStepChanged(key as FeedbackType)}
           >
             <img src={value.image.source} alt={value.image.alt} />

@@ -41,10 +41,10 @@ export function ScreenshotButton({ onScreenshotTaked, screenshot }: ScreenshotBu
   return (
     <button
           type="button"
-          className="p-2 bg-zinc-800 rounded-prsn border-transparent hover:bg-zinc-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500"
+          className="p-2 bg-zinc-100 dark:bg-zinc-800 rounded-prsn border-transparent hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-200 dark:focus:ring-offset-zinc-900 focus:ring-brand-500"
           onClick={handleTakeAScreenshot}
           >
-            { takingASreenshot? <Loading /> : <Camera className="h-6 w-6 text-zinc-100"/>}
+            { takingASreenshot ? <Loading /> : <Camera className="h-6 w-6 text-zinc-900 dark:text-zinc-100"/>}
     </button>
   )
 }

@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'class',
   content: ["./src/**/*.tsx"],
   theme: {
     extend: {
@@ -7,9 +8,15 @@ module.exports = {
           500: '#8257e6',
           300: '#996DFF'
         },
+        fill: {
+          100: '#27272A'
+        }
       },
       borderRadius:{
         prsn: '4px'
+      },
+      fontWeight:{
+        
       }
     },
   },

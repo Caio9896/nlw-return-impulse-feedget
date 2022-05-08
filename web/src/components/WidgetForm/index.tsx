@@ -47,7 +47,7 @@ export function WidgetForm() {
     setFeedbackType(null)
   }
   return (
-    <div className="bg-zinc-900 p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
+    <div className="bg-white dark:bg-zinc-900 p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
 
       {feedbackSend ? (
         <FeedbackSuccessStep 
@@ -70,7 +70,7 @@ export function WidgetForm() {
 
       <footer className="text-xs text-neutral-400">
         <p>
-          Feito por <a className="underline underline-offset-2" href='https://github.com/Caio9896' target='_blank'>Caio Martins</a>
+          Feito por <a className="underline underline-offset-2 focus:border-brand-500 focus:ring-brand-500 focus:ring-1 focus:outline-none" href='https://github.com/martins4duarte' target='_blank'>Caio Martins</a>
         </p>
       </footer>
 
